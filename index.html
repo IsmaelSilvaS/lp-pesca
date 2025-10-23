@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rifas Premium</title>
+    <title>Pescatop - Sorteios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -16,23 +17,104 @@
         <div class="circle"></div>
     </div>
 
-    <div class="container">
-        <div class="video-container">
-            <div class="video-placeholder">
-                Vídeo Promocional
+    <section class="primeira-dobra">
+        <div class="container">
+            <div class="logo-container">
+                <img src="./assets/imgs/logo.webp" alt="Rifas Premium"
+                    class="logo rounded rounded-circle border border-warning">
+            </div>
+
+            <div class="frete-container">
+                <div class="frete-text">
+                    FRETE GRÁTIS
+                </div>
+            </div>
+
+            <div class="buttons-container">
+                <a href="#" class="btn-custom btn-carretilhas">
+                    <img src="./assets/imgs/icone-carretilha.png" alt="Carretilha" class="btn-image">
+                    GRUPO RIFAS CARRETILHAS
+                </a>
+                <a href="#" class="btn-custom btn-caiaques">
+                    <img src="./assets/imgs/icone-caiaque.png" alt="Caiaque" class="btn-image">
+                    GRUPO RIFAS CAIAQUES
+                </a>
             </div>
         </div>
+    </section>
 
-        <div class="frete-text">
-            FRETE GRÁTIS
+    <section class="segunda-dobra py-5">
+        <div class="container">
+            <h2 class="titulo-ganhadores w-100">ÚLTIMOS GANHADORES</h2>
+
+            <!-- videos -->
+            <div id="carouselExampleRide" class="carousel slide pb-5" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <video class="d-block w-100" controls>
+                            <source src="./assets/imgs/video1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video class="d-block w-100" controls>
+                            <source src="./assets/imgs/video2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video class="d-block w-100" controls>
+                            <source src="./assets/imgs/video3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video class="d-block w-100" controls>
+                            <source src="./assets/imgs/video4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="carousel-item">
+                        <video class="d-block w-100" controls>
+                            <source src="./assets/imgs/video5.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+
+            <div class="buttons-container">
+                <a href="#" class="btn-custom btn-carretilhas">
+                    <img src="./assets/imgs/icone-carretilha.png" alt="Carretilha" class="btn-image">
+                    GRUPO RIFAS CARRETILHAS
+                </a>
+                <a href="#" class="btn-custom btn-caiaques">
+                    <img src="./assets/imgs/icone-caiaque.png" alt="Caiaque" class="btn-image">
+                    GRUPO RIFAS CAIAQUES
+                </a>
+            </div>
         </div>
+    </section>
 
-        <div class="buttons-container">
-            <a href="#" class="btn btn-carretilhas">GRUPO RIFAS CARRETILHAS</a>
-            <a href="#" class="btn btn-caiaques">RIFAS CAIAQUES</a>
-        </div>
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
