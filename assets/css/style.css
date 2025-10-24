@@ -70,6 +70,7 @@ body::before {
 .logo {
     max-width: 280px;
     height: auto;
+    width: auto; 
 }
 
 .frete-container {
@@ -349,6 +350,19 @@ body::before {
         gap: 1.5rem;
     }
 
+    .logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 80% !important;
+        width: 80% !important;
+        height: auto;
+    }
+
     .btn-custom {
         padding: 18px 15px !important; 
         font-size: 1.3rem !important; 
@@ -356,10 +370,6 @@ body::before {
 
     .logo-container {
         margin-bottom: 1.5rem !important;
-    }
-
-    .logo {
-        max-width: 200px;
     }
 
     .frete-container {
@@ -412,6 +422,11 @@ body::before {
         background-size: 180% auto !important; 
     }
 
+    .logo {
+        max-width: 85% !important; 
+        width: 85% !important;
+    }
+
     .carousel {
         max-width: 260px !important;
     }
@@ -422,10 +437,6 @@ body::before {
     
     .frete-text {
         font-size: 1.8rem;
-    }
-    
-    .logo {
-        max-width: 180px;
     }
 
     .btn-custom {
