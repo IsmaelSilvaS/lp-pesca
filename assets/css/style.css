@@ -14,6 +14,7 @@ html, body {
     overflow-x: hidden;
     width: 100%;
     max-width: 100%;
+    font-size: 15px;
 }
 
 body {
@@ -35,11 +36,10 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 0;
 }
 
-/* PRIMEIRA DOBRA - MAIS COMPACTA */
 .primeira-dobra {
     min-height: 100vh;
     display: flex;
@@ -48,7 +48,7 @@ body::before {
     align-items: center;
     position: relative;
     z-index: 2;
-    padding: 2rem 0; /* Adicionado padding para compactar */
+    padding: 2rem 0;
 }
 
 .container {
@@ -58,26 +58,24 @@ body::before {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem; /* Espaçamento uniforme entre elementos */
+    gap: 2rem;
 }
 
-/* Logo mais compacta */
 .logo-container {
     width: 100%;
-    margin-bottom: 2rem !important; /* Reduzido de 50px para 2rem */
+    margin-bottom: 2rem !important;
     text-align: center;
 }
 
 .logo {
-    max-width: 280px; /* Ligeiramente menor */
+    max-width: 280px;
     height: auto;
 }
 
-/* Frete mais compacto */
 .frete-container {
     width: 100%;
     text-align: center;
-    margin-bottom: 2.5rem !important; /* Reduzido de 60px para 2.5rem */
+    margin-bottom: 2.5rem !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +83,7 @@ body::before {
 }
 
 .frete-text {
-    font-size: 3rem; /* Reduzido de 3.5rem */
+    font-size: 3rem;
     font-weight: 800;
     background: linear-gradient(90deg, var(--accent-yellow), var(--accent-green));
     -webkit-background-clip: text;
@@ -99,26 +97,25 @@ body::before {
 .frete-text::after {
     content: "🚚";
     position: absolute;
-    right: -50px; /* Ajustado */
+    right: -50px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 2rem; /* Reduzido */
+    font-size: 2rem;
 }
 
-/* Botões mais compactos */
 .buttons-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem !important; /* Reduzido de 25px para 1.5rem */
+    gap: 1.5rem !important;
     width: 100%;
     max-width: 800px;
 }
 
 .btn-custom {
-    padding: 20px 25px !important; /* Reduzido de 25px 30px */
+    padding: 22px 25px !important;
     border: none;
     border-radius: 16px;
-    font-size: 1.3rem; /* Reduzido de 1.4rem */
+    font-size: 1.5rem !important;
     font-weight: 700;
     cursor: pointer;
     transition: var(--transition);
@@ -132,7 +129,6 @@ body::before {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     letter-spacing: 0.5px;
-    gap: 12px; /* Reduzido de 15px */
 }
 
 .btn-custom::before {
@@ -199,13 +195,6 @@ body::before {
     border-color: #1ed637 !important;
 }
 
-.btn-image {
-    width: 35px; /* Reduzido de 40px */
-    height: 35px; /* Reduzido de 40px */
-    object-fit: contain;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
-}
-
 .background-elements {
     position: absolute;
     top: 0;
@@ -216,7 +205,7 @@ body::before {
     z-index: 1;
 }
 
-/* SEGUNDA DOBRA (mantida igual) */
+/* SEGUNDA DOBRA */
 .segunda-dobra {
     position: relative;
     z-index: 2;
@@ -299,7 +288,6 @@ body::before {
     margin-bottom: 1rem;
 }
 
-/* MEDIA QUERIES ATUALIZADAS */
 @media (min-width: 768px) {
     .buttons-container {
         flex-direction: row;
@@ -307,16 +295,16 @@ body::before {
 
     .btn-custom {
         flex: 1;
-        font-size: 1.4rem; /* Ajustado */
-        padding: 22px 18px !important; /* Ajustado */
+        font-size: 1.6rem !important; 
+        padding: 24px 20px !important; 
     }
 
     .logo {
-        max-width: 350px; /* Ajustado */
+        max-width: 350px;
     }
 
     .frete-text {
-        font-size: 3.8rem; /* Ajustado */
+        font-size: 3.8rem;
     }
 
     .frete-text::after {
@@ -349,26 +337,21 @@ body::before {
 @media (max-width: 480px) {
     body {
         padding: 15px;
+        background-position: center bottom !important; 
+        background-size: 180% auto !important; 
     }
 
     .primeira-dobra {
-        padding: 1rem 0; /* Mais compacto no mobile */
+        padding: 1rem 0;
     }
 
     .container {
-        gap: 1.5rem; /* Menor gap no mobile */
+        gap: 1.5rem;
     }
 
     .btn-custom {
-        padding: 16px 12px !important; /* Mais compacto */
-        font-size: 1rem; /* Menor fonte */
-        flex-direction: column;
-        gap: 6px; /* Menor gap */
-    }
-
-    .btn-image {
-        width: 28px; /* Menor no mobile */
-        height: 28px;
+        padding: 18px 15px !important; 
+        font-size: 1.3rem !important; 
     }
 
     .logo-container {
@@ -376,7 +359,7 @@ body::before {
     }
 
     .logo {
-        max-width: 200px; /* Menor no mobile */
+        max-width: 200px;
     }
 
     .frete-container {
@@ -384,7 +367,7 @@ body::before {
     }
 
     .frete-text {
-        font-size: 2rem; /* Menor no mobile */
+        font-size: 2rem;
     }
 
     .frete-text::after {
@@ -393,7 +376,7 @@ body::before {
     }
 
     .buttons-container {
-        gap: 1rem !important; /* Menor gap entre botões */
+        gap: 1rem !important;
     }
 
     .titulo-ganhadores {
@@ -425,6 +408,10 @@ body::before {
 }
 
 @media (max-width: 360px) {
+    body {
+        background-size: 180% auto !important; 
+    }
+
     .carousel {
         max-width: 260px !important;
     }
@@ -439,5 +426,10 @@ body::before {
     
     .logo {
         max-width: 180px;
+    }
+
+    .btn-custom {
+        font-size: 1.2rem !important;
+        padding: 16px 12px !important;
     }
 }
