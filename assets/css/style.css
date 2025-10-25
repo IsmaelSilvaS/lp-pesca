@@ -58,12 +58,12 @@ body::before {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem !important; 
 }
 
 .logo-container {
     width: 100%;
-    margin-bottom: 2rem !important;
+    margin-bottom: 1rem !important; 
     text-align: center;
 }
 
@@ -76,7 +76,7 @@ body::before {
 .frete-container {
     width: 100%;
     text-align: center;
-    margin-bottom: 2.5rem !important;
+    margin-bottom: 1rem !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,9 +107,10 @@ body::before {
 .buttons-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem !important;
+    gap: 1rem !important; 
     width: 100%;
     max-width: 800px;
+    margin-top: 0.5rem !important; 
 }
 
 .btn-custom {
@@ -290,8 +291,13 @@ body::before {
 }
 
 @media (min-width: 768px) {
+    .container {
+        gap: 1.8rem !important; 
+    }
+
     .buttons-container {
         flex-direction: row;
+        gap: 1.2rem !important; 
     }
 
     .btn-custom {
@@ -343,11 +349,11 @@ body::before {
     }
 
     .primeira-dobra {
-        padding: 1rem 0;
+        padding: 0;
     }
 
     .container {
-        gap: 1.5rem;
+        gap: 1.2rem !important; 
     }
 
     .logo-container {
@@ -355,6 +361,7 @@ body::before {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 0.8rem !important;
     }
 
     .logo {
@@ -363,17 +370,13 @@ body::before {
         height: auto;
     }
 
+    .frete-container {
+        margin-bottom: 0.8rem !important;
+    }
+
     .btn-custom {
         padding: 18px 15px !important; 
         font-size: 1.3rem !important; 
-    }
-
-    .logo-container {
-        margin-bottom: 1.5rem !important;
-    }
-
-    .frete-container {
-        margin-bottom: 2rem !important;
     }
 
     .frete-text {
@@ -386,7 +389,8 @@ body::before {
     }
 
     .buttons-container {
-        gap: 1rem !important;
+        gap: 0.8rem !important;
+        margin-top: -10px !important; 
     }
 
     .titulo-ganhadores {
@@ -442,5 +446,13 @@ body::before {
     .btn-custom {
         font-size: 1.2rem !important;
         padding: 16px 12px !important;
+    }
+
+    .container {
+        gap: 1rem !important; 
+    }
+
+    .buttons-container {
+        gap: 0.7rem !important; 
     }
 }
