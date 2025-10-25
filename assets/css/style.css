@@ -21,7 +21,7 @@ body {
     background-color: var(--primary);
     color: var(--text-light);
     min-height: 100vh;
-    padding: 20px;
+    padding: 0 20px;
     background-image: url('../imgs/fundo.jpeg');
     background-size: cover;
     background-position: center;
