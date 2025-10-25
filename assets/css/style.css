@@ -343,7 +343,7 @@ body::before {
 
 @media (max-width: 480px) {
     body {
-        padding: 15px;
+        /* padding: 15px; */
         background-position: center bottom !important; 
         background-size: 180% auto !important; 
     }
@@ -362,6 +362,7 @@ body::before {
         justify-content: center;
         align-items: center;
         margin-bottom: 0.8rem !important;
+        margin-top: -30px;
     }
 
     .logo {
